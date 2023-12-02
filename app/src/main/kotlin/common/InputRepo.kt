@@ -10,7 +10,7 @@ import kotlin.system.exitProcess
 
 class InputRepo(
     private val sessionCookie: String,
-    private val year: Int = LocalDateTime.now().year,
+    private val year: Int = 2023,
 ) {
     fun get(day: Int): List<String> {
         val file = File("input/$year-$day.txt")
